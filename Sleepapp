@@ -38,8 +38,15 @@
         };
 
         // --- Firebase Configuration & Initialization ---
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-cult-of-sleep';
+        const firebaseConfig = {
+  apiKey: "AIzaSyDVWcNNv2jfee6JmycN5HXEmKrQ9x-0J3c",
+  authDomain: "cultofsleep-6cdb7.firebaseapp.com",
+  projectId: "cultofsleep-6cdb7",
+  storageBucket: "cultofsleep-6cdb7.firebasestorage.app",
+  messagingSenderId: "55622141495",
+  appId: "1:55622141495:web:c31a083a723e564c1561b2"
+};
+        const appId = 'default-cult-of-sleep';
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const auth = getAuth(app);
